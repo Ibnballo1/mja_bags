@@ -1,0 +1,79 @@
+nav {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navIcon {
+  cursor: pointer;
+  background-color: #feed53;
+  padding: 1rem;
+  margin: 0;
+}
+
+.icons {
+  color: #fff;
+  font-size: 24px;
+}
+
+ul {
+  border: 2px solid green;
+  height: 90vh;
+  width: 80%;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  background: #fff;
+}
+
+.close {
+  animation: slideLeft 1s both;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.open {
+  animation: slideIn 1s both;
+  display: none;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(0);
+    display: block;
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.navLi {
+  padding: 1rem;
+  font-size: 1.375rem;
+  border-bottom: #d3cccc 1px solid;
+}
+
+.navLi a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    background-color: rebeccapurple;
+  }
+
+  .navIcon {
+    display: none;
+  }
+
+  .open {
+    display: flex;
+  }
+}
