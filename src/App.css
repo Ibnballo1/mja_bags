@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  background-color: #feed53;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  border: 2px solid red;
+  margin-right: 80px;
+}
+
+@media only screen and (min-width: 786px) {
+  /* header {
+    
+  } */
+}

@@ -1,12 +1,10 @@
 nav {
   border: none;
   outline: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .navIcon {
   cursor: pointer;
-  background-color: #feed53;
   padding: 1rem;
   margin: 0;
 }
@@ -17,7 +15,7 @@ nav {
 }
 
 ul {
-  border: 2px solid green;
+  border: 1px solid grey;
   height: 90vh;
   width: 80%;
   list-style: none;
@@ -66,14 +64,23 @@ ul {
 
 @media only screen and (min-width: 768px) {
   nav {
-    background-color: rebeccapurple;
+    background-color: inherit;
   }
 
   .navIcon {
     display: none;
   }
 
-  .open {
+  ul {
+    height: inherit;
+    width: fit-content;
+    position: static;
+    background: inherit;
+  }  
+
+  .open,
+  .close {
     display: flex;
+    animation: none;
   }
 }
