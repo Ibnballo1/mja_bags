@@ -18,6 +18,7 @@ function NavBar() {
         <li className='navLi'><a href="#">Home</a></li>
         <li className='navLi'><a href="#">About</a></li>
         <li className='navLi'><a href="#">Products</a></li>
+        <li className='navLi'><a href="#">Contact Us</a></li>
       </ul>
     </nav>
   )
