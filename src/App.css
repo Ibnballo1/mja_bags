@@ -6,12 +6,15 @@
 }
 
 header {
+  position: sticky;
+  top: 0;
   background-color: #556B2F;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
 .env {
