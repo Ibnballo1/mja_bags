@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 import '../styles/navbar.css'
 
-function NavBar() {
+function NavBar({className}) {
   const [toggleNav, setToggleNav] = useState(true);
 
   const handleClick = () => {
     setToggleNav(!toggleNav);
   }
   return (
-    <nav>
+    <nav className={className}>
       <div className='navIcon' onClick={()=> handleClick()}>
         {toggleNav ? <FontAwesomeIcon icon={faBars} className='icons' /> : <FontAwesomeIcon icon={faClose} className='icons' />}
       </div>
