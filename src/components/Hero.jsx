@@ -6,11 +6,12 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons/faShoppingCart
 function Hero() {
   return (
     <div className='hero'>
-      <h1>Welcome to the MJA Company</h1>
-      <p>Discover Your Perfect Bag</p>
+      <h1>Discover Your Perfect Bag</h1>
       <div className='shopNow'>
-        <FontAwesomeIcon icon={faShoppingCart} className='cart' />
-        <a href='#' className='shopNowBtn'>Shop Now</a>
+        <a href='#' className='shopNowBtn'>
+          <FontAwesomeIcon icon={faShoppingCart} className='cart' />
+          <span>Shop Now</span>
+        </a>
       </div>
     </div>
   )

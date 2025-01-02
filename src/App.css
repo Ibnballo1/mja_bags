@@ -6,20 +6,34 @@
 }
 
 header {
-  background-color: #feed53;
+  position: sticky;
+  top: 0;
+  background-color: #556B2F;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
-.logo {
-  margin-right: 80px;
+.env {
+  color: #feed53;
+  font-size: 22px;
+  padding-right: 1rem;
 }
 
 @media only screen and (min-width: 786px) {
-  /* header {
-    
-  } */
+  .logo {
+    order: 1;
+    padding-left: 1rem;
+  }
+
+  .navBar {
+    order: 2;
+  }
+
+  .env {
+    order: 3;
+  }
 }

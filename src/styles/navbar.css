@@ -10,18 +10,17 @@ nav {
 }
 
 .icons {
-  color: #fff;
+  color: #feed53;
   font-size: 24px;
 }
 
 ul {
-  border: 1px solid grey;
-  height: 90vh;
+  height: 100vh;
   width: 80%;
   list-style: none;
   position: absolute;
   left: 0;
-  background: #fff;
+  background: #333333;
 }
 
 .close {
@@ -60,6 +59,8 @@ ul {
 
 .navLi a {
   text-decoration: none;
+  color: #fff;
+  background: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -82,5 +83,15 @@ ul {
   .close {
     display: flex;
     animation: none;
+  }
+
+  .navLi {
+    padding: 1rem;
+    font-size: 1rem;
+    border-bottom: none;
+  }
+
+  .navLi a {
+    color: #feed53;
   }
 }
