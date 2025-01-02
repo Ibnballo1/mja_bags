@@ -60,6 +60,7 @@ ul {
 .navLi a {
   text-decoration: none;
   color: #fff;
+  background: none;
 }
 
 @media only screen and (min-width: 768px) {
