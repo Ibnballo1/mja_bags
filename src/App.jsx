@@ -9,8 +9,8 @@ function App() {
     <div>
       <Header />
       <Hero />
-      <BestSeller />
       <FeaturedProduct />
+      <BestSeller />
     </div>
   )
 }
